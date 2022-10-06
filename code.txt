@@ -1,0 +1,31 @@
+$ cd /E/ICBT/BSC-Hon/Modules/Final-project/Agri/Agri-App
+$ git config --global user.name "thushali"
+$ git config --global user.email "thushali@gmail.com"
+$ git config --global push.default matching
+$ git config --global alias.co checkout
+$ git init
+$ git add .
+$ git commit -am "Initial Commit"
+$ cd ..
+$ cd ~/
+$ mkdir .ssh
+$ cd .ssh
+$ ssh-keygen.exe
+$ cat id_rsa.pub
+
+Copy key >  github/user name > setting > ssh > add key
+
+$ cd /E/ICBT/BSC-Hon/Modules/Final-project/Agri/Agri-App
+
+
+https://github.com/ThushaliRathnayake > repositories > create new
+
+…or push an existing repository from the command line
+
+
+
+
+New submition'
+$ git add .
+$ git commit -am "add file pyvenv"
+$ git push
