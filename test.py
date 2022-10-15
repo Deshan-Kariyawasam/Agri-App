@@ -71,14 +71,18 @@ def predict_label(img_path):
 @app.route('/service', methods=['POST','GET'])
 def service():
     return render_template('service.html')
+
 @app.route('/gallery', methods=['POST','GET'])
 def gallery():
     return render_template('gallery.html')
-@app.route('/about', methods=['POST','GET'])
+
+@app.route('/contact', methods=['POST','GET'])
 def about():
-    return render_template('about.html')
+    return render_template('contact.html')
 
-
+@app.route('/Crop_Disease', methods=['POST','GET'])
+def Crop_Disease():
+    return render_template('Crop Disease.html')
 
 @app.route("/", methods=['GET', 'POST'])
 def main():
