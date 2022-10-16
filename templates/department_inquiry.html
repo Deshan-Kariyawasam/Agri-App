@@ -2,27 +2,11 @@
     <title>Plant disease Detection</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
-     <!--booststrap-->
-     <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-     <!--//booststrap end-->
-     <!-- font-awesome icons -->
-     <link href="/static/css/font-awesome.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- 
-     <!--stylesheets-->
-     <link href="/static/css/style.css" rel='stylesheet' type='text/css' media="all">
-     <!--//stylesheets-->
-     <!-- Web-Fonts -->
-   <link href="http://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-   <link href="http://fonts.googleapis.com/css?family=Mada:200,300,400,500,600,700,900&amp;subset=arabic" rel="stylesheet">
-   <!-- //Web-Fonts -->
-   <script src="/static/js/monetization.js" type="text/javascript"></script>
     <style>
       
       @media only screen and (min-width: 600px) {
@@ -248,39 +232,7 @@
       }
           </style>
   </head>
-  <div class="main-top" id="home" style="min-height: 300px;">
-    <!-- header -->
-    <div class="headder-top">
-      <!-- nav -->
-      <nav >
-        <div id="logo">
-          <h1><a href="/">Farmer</a></h1>
-        </div>
-        <label for="drop" class="toggle">Menu</label>
-        <input type="checkbox" id="drop">
-        <ul class="menu mt-2">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/service">Services</a></li>
-          <li><a href="/Inquiry">Inquiry</a></li>
-          <li><a  onclick="location.href = '/'" id="logout"  data-toggle="modal" data-target="#myModal1">Log Out</a></li>
-
-          </ul>
-        </ul>
-      </nav>
-      <!-- //nav -->
-    </div>
-    <!-- //header -->
-    <!-- banner -->
-    <div class="main-banner text-center">
-      <div class="container1"style="width: 97% !important;">
-        <div class="style-banner" style="    padding-top: 8em; text-align: right;">
-          <h4 class="mb-2">Welcome to {{x}}</h4>
-        </div>        
-      </div>
-    </div>
-  </div>
-  <!-- //banner -->
-
+  
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -321,59 +273,7 @@
     
     
   </div>  
-  
-  <div class="container">
-    <div class="jumbotron bg-primary">
-      <h1>DO YOU HAVE ANY NEW DISEASES FOUND????</h1>
-      <h3>Upload your images of newly found diseases with their disease name. We will add the disease into system</h3>
-       </div>
-    <br><br>
-    
-  
-     
-    <div class="row">
 
-      <div class="col-sm-6">
-        <div class="uploader">
-          <form class="form-horizontal" action="/uploaded" method="post" enctype="multipart/form-data">
-          
-            <div class="drag-area">
-              <br><br>
-              <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
-              <header>Upload Your Images :</header>
-              <br><br>
-                <div class="form-group">
-                  <div class="col-sm-10">          
-                    <input type="file" class="form-control" placeholder="Hours Studied"  name="files[]" id="pwd" multiple="multiple">
-                  </div>
-                </div>    
-           </div>
-           <div class="gap"></div>
-
-           <div class="form-group">
-        
-            <div class="col-sm-10">          
-                <label for="fname">Plant name:</label><br>
-                <input type="text" id="pname" name="pname"><br>
-            </div>
-          </div>
-          <div class="gap"></div>
-           <div class="form-group">
-        
-            <div class="col-sm-10">          
-                <label for="fname">Disease name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-            </div>
-          </div>
-          <div class="gap"></div>
-           <div class="form-group">        
-              <!-- <div class="col-sm-offset-2 col-sm-10"> -->
-                <button type="submit" class="btn btn-success">UPLOAD</button>
-              <!-- </div> -->
-            </div>
-          </form>
-          </div>
-      </div>
     
     
     

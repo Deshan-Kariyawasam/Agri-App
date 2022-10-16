@@ -88,6 +88,9 @@ def Crop_Disease():
 def main():
     return render_template("index.html")
 
+@app.route("/Inquiry", methods=['GET', 'POST'])
+def Inquiry():
+    return render_template("department_inquiry.html")
 
 @app.route("/submit", methods=['GET', 'POST'])
 def get_pred():
@@ -103,7 +106,7 @@ def get_pred():
         p = predict_label(img_path)
         p = Markup(str(disease_dic[p]))
 
-    return render_template("index.html", prediction=p, img_pathn=img_pathn)
+    return render_template("Crop Disease.html", prediction=p, img_pathn=img_pathn)
 
 
 @app.route("/logged_in", methods=['POST'])
@@ -140,10 +143,7 @@ def dep():
         postsdep = {}    
     print(postsdep)
 
-
-
     return render_template("department.html", x = username_, postsdep = postsdep)
-
 
 @app.route("/uploaded", methods=['POST'])
 def loggedD():
@@ -247,4 +247,3 @@ def inquired():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
