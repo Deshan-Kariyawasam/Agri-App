@@ -88,9 +88,30 @@ def Crop_Disease():
 def main():
     return render_template("index.html")
 
-@app.route("/Inquiry", methods=['GET', 'POST'])
-def Inquiry():
-    return render_template("department_inquiry.html")
+@app.route("/his", methods=['GET', 'POST'])
+def his():
+    return render_template("home_p.html")
+
+
+################################
+@app.route("/iquiry", methods=['POST'])
+def depi():
+    global current_depuser
+    current_depuser = request.form.get("depcustId")
+    ref_ = db.reference('department_inquiry/' + current_depuser + '/userdetails/username',app=department, url="https://agri-department1-default-rtdb.firebaseio.com/")
+    username_ = ref_.get()
+    current_depuser = request.form.get("depcustId")
+
+    postsdep = db.reference('Inquiry').get()
+    if postsdep is not None:
+        vals = list(postsdep.values())
+        postsdep = json.dumps(vals)
+    else:
+        postsdep = {}    
+    print(postsdep)
+
+    return render_template("department_inquiry.html", x = username_, postsdep = postsdep)
+################################
 
 @app.route("/submit", methods=['GET', 'POST'])
 def get_pred():
@@ -247,3 +268,5 @@ def inquired():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
