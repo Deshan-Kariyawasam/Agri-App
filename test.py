@@ -54,7 +54,7 @@ model.make_predict_function()
 
 
 def predict_label(img_path):
-    #i = cv2.imread(img_path)
+    #i = cv2.imread(img_path) #
     #i = tf.io.decode_jpeg(i, channels=3)
     #i = cv2.resize(i,(224,224))
     #i = i/225.0
