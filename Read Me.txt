@@ -1,0 +1,30 @@
+============================================
+Instructions:
+============================================
+
+1. Open VS Code
+2. Open Folder "AGRI_APP"
+3. Install Python Extentin in VS Code
+4. Install Dependencies
+    * pip install Flask
+    * pip install keras
+    * pip install tensorflow
+    * pip install Pillow
+    * pip install numpy
+    * pip install opencv-python
+    * pip install firebase-admin
+    * pip install urllib3
+5. Run test.py 
+
+
+
+============================================
+Sample Login Credentials :
+============================================
+Farmer : 
+    Email : chandrasiri@gmail.com
+    Password : Admin@123
+
+Department :
+    Email : uchitha@gmail.com
+    Password : Admin@123
